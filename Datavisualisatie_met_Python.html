@@ -5,8 +5,102 @@
   </head>
   <body>
     <h1>Datavisualisatie met Python</h1>
-       <h2>Gebruikersnaam kaggle</h2>
-        <p>Mijn gebruikersnaam is Jeweetwel</p>
-        <p><a href="index.html">terug</a></p>
+    
+      <h2>Gebruikersnaam kaggle</h2>
+       <p>Mijn gebruikersnaam is Jeweetwel</p>
+       <p><a href="index.html">terug</a></p>
+    
+      <h2>Link naar code (kaggle)</h2>
+       <p>https://www.kaggle.com/jeweetwel/imdb-visualisatie</p>
+    
+    <h2>Evaluatie</h2>
+      <p>De curssusen duurden erg lang. Uiteindelijk ben ik overgegaan op het alleen lezen van de cursussen,
+      <br>om genoeg tijd over te houden om echt aan de slag te gaan. Terwijl ik aan de slag ging, kwam ik
+      <br>er al snel achter dat ik naast Python en Datavisualisatie ook Panda nodig zou hebben, dus die cursus
+      <br>heb ik toen ook even doorgelezen.</p>
+    
+      <p>Ik wist al snel dat ik data over covid19 niet erg interessant zou vinden, doordat ik er al erg veel
+      <br>over had gelezen. Ik ben toen bij imdb gaan kijken en vond daar een paar data lijsten. Ik wil de eerst
+      <br>gaan onderzoeken uit welk land de beste films komen, maar doordat er niet bij de films bijstaat uit welk
+      <br>land het komt, zou dat erg moeilijk worden. Zo was er wel een lijst met allemaal verschillende titels,
+      <br>met apart nog een rij met de originele, maar zonder het land waar het vandaan komt. Dan zou ik dus de
+      <br>originele titel moeten koppelen aan de titel die hetzelfde is en daarvan het land opslaan. Nog ingewikkelder
+      <br>werd dat sommige titels in een land hetzelfde was, maar waarbij het dan niet het land van herkomst was.
+      <br>Ik heb dus gekozen te onderzoeken uit welk jaar de beste films komen. (Zie daarover hieronder meer)</p>
+    
+      <p>Dit ging best goed. Ik wilde kijken wat voor verschil het zou uitmaken als ik films waarvoor meer was gestemd
+      <br>ook meer mee liet tellen, maar dat lukte me ook nog niet. Ik heb opgezocht wat eventuele pieken en dalen
+      <br>kunnen betekenen, maar heb deze dingen niet kunnen markeren in de grafieken door tijdgebrek.</p>
+    
+      <p>Belangrijk om op te merken is dat mensen pas op imdb films een cijfer hebben kunnen geven vanaf 1990. Dit kan
+      <br>dus ook invloed hebben op de beoordeling van oudere films.</p>
+    
+    <h2>Eerste grafieken</h2>
+      <p>Dit kwam er als eerst uit. Aan het begin zie je erg grote knikken, omdat er toen heel weinig films waren.
+      <br>Ik heb toen een code geschreven waarmee ik kan tellen hoeveel films per jaar erop staan. Hiervan heb ik ook de
+      <br>volgende grafiek gemaakt.</p>
+    
+      <p>Ik heb daarna besloten dat een jaar meer dan 500 films moest hebben om meegerekend te worden. De grafiek begint
+      <br>dus nu vanaf 1896, niet toevallig een jaar na de productie van apparatuur waar makkelijk films mee te maken
+      <br>zijn. Daarnaast werden films dat jaar voor het eerst in bioscopen vertoond. Daarnaast heb ik alle films vanaf
+      <br>2020 er ook uitgehaald, omdat die nog niet uit zijn. Ook de films van 2020 heb ik eruit gelaten, omdat hiervan
+      <br>ook nog niet alles uit is. Dit geven de volgende grafieken. Hieronder ga ik nog wat schrijven bij ingezoomde
+      <br>grafieken, die steeds 25 jaar laten zien. Hierbij verandert de y-as ook van verdeling, dus om de grafieken onderling
+      <br>te vergelijken, moeten toch de grafieken hieronder gebruikt worden</p>
+    
+      <p>Hier valt al erg op dat de waardering erg stijgt. Waarschijnlijk omdat er met de tijd meer technieken en mogelijkheden
+      <br>bijkomen en doordat de films voor een groter publiek gemaakt worden. Daarnaast worden er steeds meer films gemaakt, met
+      <br>2018 als hoogtepunt. Ook dit komt waarschijnlijk door de verbetering van technieken en ook het goedkoper worden van die
+      <br>technieken. Daarnaast komt er door het internet steeds meer mogelijkheden om films te produceren, zoals via streaming-
+      <br>services, dus komt er meer publiek en weer meer geld om meer films te produceren.</p>
+    
+    <h2>De ingezoomde grafieken</h2>
+    <h3>1896-1920</h3>
+      <p>De gemiddelde beoordelingen van de films zijn erg laag. Waarschijnlijk omdat tot 1920 er geen goed systeem was geluid
+      <br>en beeld te synchroniseren. Ook waren de enige kleurenfilms handmatig ingevuld en dus niet veel voorkomend. Doordat
+      <br>dit niet is wat mensen tegenwoordig gewend zijn, zullen ze dit over het algemeen een lager cijfer geven. Tijdens de 1e
+      <br>neemt de kwaliteit niet af, maar blijft juist standvastig hoger dan de meeste eerdere jaren. Ook blijft deze trend zich
+      <br>voortzetten.</p>
+    
+      <p>Er is een piek vlak voor de 1e Wereldoorlog, maar door de oorlog kan de industrie niet meer goed doorgroeien. Na de 1e
+      <br>Wereldoorlog zien we wel alweer een lichte stijging in het aantal gemaakte films: de filmindustrie heeft zich weer herpakt.
+      <br>Dit was vooral in Amerika. In de Europese landen is de filmindustrie helemaal ingezakt en kunnen Frankrijk en Italië
+      <br>hun plek als hoofdfilmproducenten niet meer terugveroveren.</p>
+    <h3>1921-1945</h3>
+      <p>De meest logische verklaring voor de dip in 1930 zal de grote depressie moeten zijn. Hierdoor kan het zijn dat films het
+      <br>nogal somber inzagen en geen hoog budget meer hadden, met vermindering van hun kwaliteit als gevolg. Ook rond de 2e
+      <br>Wereldoorlog is er geen daling van kwaliteit te zien, eerder juist een stijging. In deze tijd werden veel films gebruikt
+      <br>als propaganda middel. Hierdoor was er wel veel budget vrij voor filmmakers om films te maken. De kwalitiet gaat niet meer
+      <br>terug naar het oude niveau, waarschijnlijk doordat er nu een techniek is uitgevonden om beel en geluid te laten synchroniseren.</p>
+    
+      <p>Hier valt op hoe er steeds minder films worden gemaakt, met weer de oorlog als dip.</p>
+    <h3>1946-1970</h3>
+      <p>Hier is de eerste grote piek, in 1960. Hier komt hij evenhoog als 2014 en 2018. Een specifieke reden dat dit een piek
+      <br>is, heb ik niet. Wel zijn er veel veranderingen rond deze tijd die zorgen voor de verbetering van kwaliteit in films:
+      <br>kleurenfilms zijn makkelijk en goedkoop te maken vanaf 1950 en vanaf 1960 zijn de zwart-wit bijna helemaal verdwenen.
+      <br>Daarnaast worden er meer onafhankelijke films gemaakt en is er de opkomst van productie bedrijven. Ook worden er meer
+      <br>films gemaakt buiten Hollywood en hebben Frankrijk en Groot-Brittanië een opkomst in het filmmaken. Hierdoor zijn er
+      <br>waarschijnlijk meer vernieuwende films gekomen, met stijging van de kwaliteit als gevolg.<p>
+    
+      <p>Er is een duidelijke stijging te zien, wat waarschijnlijk komt door het goedkoper worden van technieken en daarnaast
+      <br>de verbetering van de technieken.</p>
+    <h3>1971-1995</h3>
+      <p>De kwaliteit blijft hier erg hetzelfde, maar veel verandert ook niet echt.</p>
+    
+      <p>Er is een enorme stijging aan het aantal gemaakte films. Dit komt waarschijnlijk door de opkomst van de video recorder in 1970
+      <br>in 1970 en de opkomst van de dvd in 1990, waarmee dus veel meer winst kon worden gemaakt. Daarnaast werd in de jaren 90 voor
+      <br>het eerst CGI gebruikt. In de jaren 90 werden daarnaast meer onafhankelijke films gemaakt, wat ook zorgt voor een toename.</p>
+    
+    <h3>1996-2019</h3>
+      <p>De stijging en vasthouding van die stijging komt waarschijnlijk door het feit dat films steeds diverser en voor een groter publiek
+      <br>worden gemaakt, waardoor meer mensen de films en series leuk vinden. Vanaf 2012 blijft de gemiddelde beoordeling boven de 7,0
+      <br>toevallig ook het jaar waarin Netflix wordt geïntroduceerd in Europa. Ook toevallig is de stijging die begint in 2008, hetzelfde
+      <br>jaar waarin de eerste film van Marvel, 'Iron Man', uitkwam.
+        
+      <p>Stijgende toenname in het aantal films. Wat meehelpt is de opkomst van streamingservices, die erg veel films en series produceren
+      <br>per jaar. Een verklaring voor de dip in 2019 heb ik (nog) niet.</p>
+    
+    <h2>Conclusie</h2>
+    <p>2019 is het beste filmjaar. Daarnaast zitten we in een erg goede tijd van films, omdat ze blijvend een erg hoge score krijgen.</p>
   </body>
 </html>
