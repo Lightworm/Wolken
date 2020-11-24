@@ -21,7 +21,8 @@
     
     <h2>De taakverdeling</h2>
     <p>Teun heeft het levelswitchsysteem, de arcade box en de eerste versie van collision detection en die van het
-      <br>startscreen gemaakt. Ik heb de rest gedaan.</p>
+      <br>startscreen gemaakt. Ook heeft hij de kippen geplaatst en de muziek erin gezet. Ik heb de rest gedaan.
+    <br>De samenwerking ging best soepel, al was het erg irritant datwe niet aan hetzelfde bestand konden werken in de editor.</p>
     
     <h2>Mijn werk</h2>
     <p>Een deel van wat ik deed was het maken van de graphics. Veel pixelart tekende ik eerst op papier, wat
@@ -36,4 +37,75 @@
     Hieronder zijn alle schetsen die ik heb gemaakt.
    
     <h4>De vos</h4>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/VosV.jpg"/>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/VosR.jpg"/>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/VosA.jpg"/>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/VosL.jpg"/>
     
+    <h4>De heg en de kip</h4>
+    <p>*Bij de heg en de kip zie je de andere kant erdoorheen</p>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/Heg.jpg"/>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/Kip.jpg"/>
+    
+    <h3>Het doolhof</h3>
+    <p>Ik heb twee verschillende heggen gemaakt, waarbij de schaduw verschillend was, opdat je het verschil tussen
+    <br>een horizontale en verticale heg kan zien. De heggen zijn allemaal vierkant en het doolhof heb ik gemaakt
+    <br>door de heggen een voor een neer te zetten. Hoewel dit veel code oplevert en er niet zo netjes uitziet,
+    <br>heb ik twee redenen gehad om dit zo te doen. Ten eerste wilden we graag een zo groot mogelijk doolhof voor
+    <br>de presentaties. Ik had dus een tijdslimiet en om een manier te vinden met een for loop dat de heggen op
+    <br>hun plekken zou kunnen neerzetten, waar niet echt een patroon in zit, zou waarschijnlijk te veel tijd kosten.
+    <br>Ten tweede is het handiger om dan te weten hoe het doolhof in elkaar zit. Dit heb je eigenlijk pas echt
+    <br>duidelijk nadat je alles hebt neergezet. Toen ik begon wist ik nog niet hoe het zou gaan en wat er op zou
+    <br>passen. Als ik nu nog door zou gaan met het project, zou ik er naar kunnen gaan kijken om een betere manier
+      <br>te vinden om het te coderen.</p>
+    
+    <h4>Het voorbeeld doolhof</h4>
+    <img height="500" src="/Wolken/Folder_Afbeeldingen/Maze.jpg"/>
+    
+    <h3>Collision detection</h3>
+    <p>Een van de dingen die wat lastiger waren, was collision detection. Ik had heel leuk bedacht dat de vos een animatie
+    <br>zou krijgen bij het lopen. Hoewel ik dit afhankelijk had gemaakt van de de algemene x en y waarden, betekende dit
+    <br>wel dat deze vaak opnieuw moeten worden ingesteld. (Hierover later meer). Toen ik de collision detection van Teun
+    <br>kreeg, vlogen de poten door de heggen heen en lieten de rest van de vos achter. Ook was de collision detection
+    <br>een beetje hobbelig en stuiterde de vos tegen de heggen aan. Ik heb toen besloten dit aan te passen, aangezien
+    <br>ik alweer een andere versie had van het spel dan Teun en we hadden niet veel tijd meer. In plaats van de x en de y aan 
+    <br>te passen als de vos botste, ben ik de snelheid gaan veranderen naar nul. Het probleem was dat elke heg in het deel
+    <br>ging meten of de vos ertegen aan kwam, wat erin resulteerde dat de snelheid niet werd aangepast. Dit heb ik opgelost
+    <br>door een getal te kiezen en daar 1 af te trekken als de vos tegen een heg aankwam. Elke keer dat het frame herlaadde,
+    <br>declareerde ik het getal opnieuw, zodat het steeds weer begon met hetzelfde getal. Daarna maakte ik een functie dat
+    <br>checkte of het getal was waarmee het begon. Door dit met elke snelheid apart te checken, wist ik aan welke kant de vos
+    <br>botste en welke snelheid naar nul moest. Ook kon ik zo checken of hij misschien twee verschillende heggen raakte aan twee
+    <br>verschillende kanten.
+      
+    <h3>bugs fixen</h3>
+    <p>De poten waren erg irritant. Er waren twee bugs, naast die van de collision detection, die ik heb moeten fixen. De eerste
+    <br>was redelijk simpel. Als de vos switchte van level, bleven de poten achter. Ik heb functies gemaakt voor elke kant waarvan
+    <br>de speler kon binnenkomen en daar de juiste x-posities of y-posities van de poten ingezet.</p>
+    
+    <p>De tweede was wat irritanter en eerlijk gezegd snap ik nog steeds niet helemaal waarom het precies werkt. Wat er gebeurde
+    <br>was dat de poten raar gingen doen als je zonder alle toetsen los te laten steeds wisselde van richting, gingen de poten
+    <br>raar doen. Ik heb verschillende dingen geprobeerd, waaronder de snelheid op nul zetten. Wat me toen opviel was dat de poten
+    <br>een half blokje naar links of naar rechts zaten. Ik heb toen een nieuwe waarde aan de x-posities toegekend elke keer als de
+    <br>andere kant wordt ingedrukt. Dit was steeds een blokje naar rechts of naar links in vergelijking met wat ze eigenlijk waren.
+      <br>Dit werkte!</p>
+    
+    <p>Een bug ongerelateerd met de poten was dat de vos niet altijd goed werd getekend als je wisselde van richting zonder de vorige
+    <br>toets eerst los te laten. Dit kwam door de keyPressed() functie die ik gebruikte. Deze gebruikte ik om ervoor te zorgen dat
+    <br>hij dezelfde kant op bleef kijken als je stopte met lopen. Wat een probleem was, was dat hij tekende wat je het laatste indrukte
+    <br>of losliet. Door een keyDown() functie te maken, met een keyPressed() functie voor als hij stopte met lopen, heb ik ervoor kunnen
+      <br>zorgen dat hij en goed werd getekend en de goede kant opkeek als hij stopte met lopen.</p>
+    
+    <h3>Overige dingen</h3>
+    <p>Ik heb verder het startscreen, de uitleg en het endscreen gemaakt. Dit was niet echt moeilijk. Ik moest vooral bedenken hoe
+    <br>ik het er cool uit kon laten zien terwijl ik redelijk standaard lettertypen had. Daarnaast heb ik ervoor gezorgd dat de tijd
+    <br>werkte, door steeds de tijd te meten van elk frame en dat bij elkaar op te tellen (deltaTime is een functie in javascript j5,
+    <br>dus zodra ik dit had ontdekt ging het erg makkelijk) en ik heb ervoor gezorgd dat de kippen opgepakt en geteld konden worden.
+    <br>Het grootste probleem was dat de kippen weg moesten van het doolhof als de vos ze had opgepakt, wat ik heb gedaan door hun x-positie
+    <br>te veranderen. Daarnaast heb ik bedacht wat een goede manier zou zijn om de score te berekenen en heb ik de functie voor de high-
+    <br>score gemaakt.
+      
+    <h3>Het resultaat</h3>
+    <p>*Ik weet niet of alle dingen die je moet indrukken kloppen, omdat dit spel voor de arcade is gemaakt.</p>
+    
+  </body>
+</html>
