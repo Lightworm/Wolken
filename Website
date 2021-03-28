@@ -4,6 +4,8 @@
   </head>
   <body>
     <h1>Website</h1>
+    <p>De website staat op dit moment op 'coming-soon mode', omdat ik er nog meer films op wil zetten voordat
+    <br>ik hem officieel online zet. Voor de presentatie had ik hem daar even af gehaald.</p>
       <h2>Idee voor de website</h2>
       <p>Het idee voor de website kwam van mijn pws. Voor mijn pws heb ik onderzocht wat een film feministisch
       <br>maakt, waaruit ik criteria heb gemaakt waardoor je kunt herkennen of een film mannen en vrouwen goed
@@ -12,3 +14,51 @@
       <br>er ook wat aan hebben, kwam ik op het idee de kijkwijzer in een website te stoppen. Het idee
       <br>was dus niet dat andere mensen de kijkwijzer zelf konden invullen, omdat de kijkwijzer is bedoeld
       <br>zo objectief mogelijk te zijn. Als andere mensen het kunnen invullen, wordt het meer subjectief.</p>
+      
+      <p>Wat lastig was met dit idee was dat ik pas laat kon beginnen, omdat ik eerst nog mijn kijkwijzer af
+      <br>moest maken. Verder was het lastig om een goed systeem te bedenken hoe ik ze erin kon zetten en wat
+      <br>ik erbij wilde zetten. Zo wilde ik een manier om duidelijk te maken hoe goed een bepaalde aantal punten
+      <br>was, omdat het anders maar een getal is. Daarvoor moet je alleen veel films hebben beoordeeld om
+      <br>dat echt goed te weten, maar daar had ik geen tijd voor. Ik heb daarom besloten om het in ieder geval
+      <br>nu wat globaler te houden en drie ranken te maken, met 'goed', 'slecht' en 'matig' en mensen te laten
+      <br>filteren op hoe goed ze zijn tenopzichte van de andere films (bijvoorbeeld 'hoogste 10%' of 'laagste 25%')</p>
+      
+      <h2>Het proces</h2>
+      <p>Mijn eerste plan was om de website helemaal zelf te coderen, omdat je dan veel controle hebt over je
+      <br>website en daarnaast leek het me ook wel leuk om te doen. Na een interview met een professionele
+      <br>websitemaker, besloot ik net als haar wordpress te gebruiken. Dit deed ik omdat ik het interessant
+      <br>vond dezelfde software als een echte websitemaker te gebruiken en zij kon mij ook al meerdere tips geven,
+      <br>dus dat was handig. Zij heeft ook mijn domeinnaam en hosting geregeld.</p>
+      
+      <p>Het lastige aan wordpress is dat er enorm veel mogelijkheden zijn, maar omdat het mijn eerste keer was,
+      <br>wist ik niet wat die waren en waar ik moest beginnen. Ik ben toen begonnen met een theme en template
+      <br>uitzoeken die mij handig leken voor mijn website. Er waren goede templates voor de website die ik wilde
+      <br>gaan maken, maar die kosten veel geld, dus dat heb ik niet gedaan. Ik kwam uiteindelijk uit op Astra theme,
+      <br>die ik vooral heb gekozen omdat ik er goede dingen over hoorde en de templates mij ook interessant leken,
+      <br>en koos daarvan een plantenwinkel template.</p>
+      
+      <p>Vervolgens ben ik gaan uitzoeken hoe een template werkt en hoe je die kan aanpassen. Toen ik dat eenmaal had
+      <br>gedaan, ben ik meer gaan focusen op wat mijn website nodig had en hoe ik dit het best kon aanpakken. Zo heb
+      <br>ik een custom post gemaakt, die de producten van mijn plantenwinkel website kon vervangen, zodat ik mijn
+      <br>eigenschappen aan kon geven. Zo heb ik meerdere custom taxonomys gemaakt die bij die custom post hoorde.
+      <br>Hier kwam mijn eerste grote probleem: de posts werden niet opgepakt door mijn website en de plug-in die
+      <br>ik had gebruikt, gaf geen mogelijkheid daar iets makkelijk aan te doen. Om ze er toch op te krijgen besloot
+      <br>ik een lijst te maken met de filmposter als thumbnail met hun titel en score erbij, waarbij ik de link naar de
+      <br>post zetten. Het ziet er precies uit zoals ik wilde dat het eruit zou zien, maar is helaas minder dynamisch.
+      <br>Later kwam ik erachter dat er voor mijn theme een speciale plug-in was die dit allemaal veel makkelijker
+      <br>had kunnen maken. Dat was een van de momenten waarop ik merkte dat ik nog maar heel weinig wist van wordpress.</p>
+      
+      <p>Een ander moment waarop ik dit merkte toen ik plug-ins met shortcode ging gebruiken. Deze gebruikte ik om een
+      <br>filterfunctie te maken en ervoor te zorgen dat mijn tekst in en uit kon klappen. Deze shortcode kan je in je
+      <br>theme-editor zetten om het op een pagina of stuk tekst te laten werken. Op bijna elke website die ik vond, stond
+      <br>dit er alleen niet bij. Er stond alleen dat je de code moest gebruiken, maar ze zeiden nergens waar. Dit heeft
+      <br>uiteindelijk nog best wat tijd gekost om dit uit te vinden.</p>
+      
+      <p>Uiteindelijk ging de meeste tijd dus in het leren van wordpress en bijna geen in het coderen. Ik heb in totaal twee
+      <br>regels CSS gebruikt: een om ervoor te zorgen dat de woorden op kleinere beeldschermen niet op rare plekken doormidden
+      <br>breken en een om ervoor te zorgen dat alle tekst standaard zwart is, omdat ik geen zin had het steeds te veranderen.</p>
+      
+      <h2>In de toekomst</h2>
+      <p>Ik ben van plan er meer films op te zetten en als ik meer tijd heb mijn custom posts over te zetten op de plug-in
+      <br>die bij mijn theme hoort. Verder wil ik nog gaan uitvinden waarom mijn website een plant zien als hij op kleinere
+      <br>schermen wordt geopend, terwijl ik dat plaatje allang heb verwijderd.</p>
